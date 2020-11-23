@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:600,700@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background: radial-gradient(
+        circle at 60% 20%, 
+        hsl(214, 47%, 23%),  
+        hsl(237, 49%, 15%) 
+    );
+    color: #fff;
+    min-height: 100vh;
+}
+
+
+.container{
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    margin: 40px;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 0.8;
+    text-transform: uppercase;
+
+}
+
+h4{
+    color: hsl(229, 64%, 46%);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.score-container{
+    background-color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.score-container p{
+    color: hsl(229, 25%, 31%);
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+main{
+    height: 350px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+main::before{
+    background-image: url('./images/bg-triangle.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    height: 70%;
+    width: 70%;
+    z-index: -1;
+}
+
+.btn-circles {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: none;
+    margin: 0 25px;
+    box-shadow: inset 0 -6px rgba(61, 34, 34, 0.3);
+}
+
+.btn-circles .wrapper{
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: inset 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-paper{
+    background: linear-gradient(
+        to bottom,
+        hsl(230, 89%, 62%), 
+        hsl(230, 89%, 65%)
+    );
+}
+
+.btn-scissors{
+    background: linear-gradient(
+        to bottom,
+        hsl(39, 89%, 49%), 
+        hsl(40, 84%, 53%)
+    );
+}
+
+.btn-rock{
+    background: linear-gradient(
+        to bottom,
+        hsl(349, 71%, 52%), 
+        hsl(349, 70%, 56%)
+     );
+}
+
+
+.btn-rules{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-family: inherit;
+    padding: 10px 25px;
+    letter-spacing: 2px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
