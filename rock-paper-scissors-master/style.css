@@ -17,7 +17,7 @@ body{
 
 
 .container{
-    width: 700px;
+    width: 600px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -27,8 +27,9 @@ header{
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
-    padding: 25px;
-    margin: 40px;
+    align-items: center;
+    padding: 20px;
+    margin: 50px 0;
 }
 
 h1{
@@ -92,7 +93,16 @@ main::before{
     width: 150px;
     border: none;
     margin: 0 25px;
+    cursor: pointer;
     box-shadow: inset 0 -6px rgba(61, 34, 34, 0.3);
+}
+
+.btn-circles:focus{
+    outline: none;
+}
+
+.btn-circles:active{
+    transform: scale(0.9);
 }
 
 .btn-circles .wrapper{
@@ -144,4 +154,32 @@ main::before{
     position: fixed;
     bottom: 30px;
     right: 30px;
+}
+
+.btn{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    text-transform: uppercase;
+    color: hsl(229, 25%, 31%);
+    font-size: 20px;
+    font-family: inherit;
+    padding: 10px 25px;
+    letter-spacing: 2px;
+}
+
+.selection {
+    display: none;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.selection .btn-circles{
+    margin: 50px;
+    transform: scale(1.2);
 }
