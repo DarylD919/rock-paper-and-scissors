@@ -179,6 +179,12 @@ main::before{
     margin: 0 auto;
 }
 
+
+.selection h1{
+    margin-bottom: 20px;
+
+}
+
 .selection .btn-circles{
     margin: 50px;
     transform: scale(1.2);
